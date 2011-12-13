@@ -2,6 +2,6 @@
 To install, use:
 
 <pre>
-git clone https://github.com/frankm/vim.git .vim && (cd .vim && ./bundles.sh) && ln -s .vim/vimrc .vimrc
+git clone git://github.com/frankmt/vim.git .vim && (cd .vim && ./bundles.sh) && ln -s .vim/vimrc .vimrc
 </pre>
 
