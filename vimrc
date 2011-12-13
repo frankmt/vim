@@ -1,3 +1,10 @@
+" load pathogen (all plugins in the bundles folder)
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+filetype off
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+filetype plugin indent on
+
 ",v edits .vimrc
 ",V reloads .vimrc
 map ,v :e ~/.vimrc<CR>
@@ -50,4 +57,15 @@ inoremap <left> <nop>
 inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
+
+" use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
+
+" configure syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_loc_list=1
+
 

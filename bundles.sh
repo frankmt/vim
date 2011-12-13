@@ -14,7 +14,6 @@
 #git://github.com/vim-scripts/slimv.vim.git
 #git://github.com/ervandew/supertab.git
 #git://github.com/tpope/vim-surround.git
-#git://github.com/scrooloose/syntastic.git
 #git://github.com/timcharper/textile.vim.git
 #git://github.com/tpope/vim-unimpaired.git
 #git://github.com/vim-scripts/ZoomWin.git
@@ -24,9 +23,13 @@
 #git://github.com/tpope/vim-surround.git
 
 
+curl -so ~/.vim/bundle/pathogen.vim https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim
+
+
 GIT_BUNDLES="
 git://github.com/wincent/Command-T.git
 git://github.com/scrooloose/nerdtree.git
+git://github.com/scrooloose/syntastic.git
 "
 
 # clone/update bundles from git
